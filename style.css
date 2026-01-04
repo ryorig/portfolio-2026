@@ -358,12 +358,14 @@ body {
 }
 
 /* Responsive Hero */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .hero-card {
         flex-direction: column-reverse;
-        /* Text on top or bottom? usually Text top on mobile, Image bottom. Let's try column-reverse to put text on bottom of image or just stack. 
-        Actually, for "Hero" usually Image Top, Text Bottom is standard for mobile apps. */
-        flex-direction: column;
+        /* Image (2nd child) visual top, Text (1st child) visual bottom? 
+           Actually column-reverse stacks from bottom up. 
+           Text (1st) -> Bottom.
+           Image (2nd) -> Top.
+           Correct. */
         height: auto;
         min-height: auto;
     }
