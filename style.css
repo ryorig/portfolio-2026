@@ -978,3 +978,124 @@ body {
     background: rgba(0, 0, 0, 0.05);
     border-color: rgba(0, 0, 0, 0.2);
 }
+/* News Section Styles */
+.news-card {
+    padding: 0 !important; /* カード自体の余白は消して、リストアイテムで制御 */
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.news-item {
+    background: #F5F7FA; /* 画像に近い少し青みがかった薄いグレー */
+    border-radius: 20px;
+    padding: 24px 32px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    overflow: hidden;
+}
+
+.news-item:hover {
+    background: #EEF1F5;
+}
+
+.news-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.news-date {
+    font-family: var(--font-main);
+    color: #4A90E2; /* 画像の日付の色 */
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.news-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.news-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.news-tag.highlight {
+    background-color: #0055FF; /* 鮮やかな青 */
+    color: white;
+}
+
+.news-tag.secondary {
+    background-color: #DDEAFE; /* 薄い青 */
+    color: #0055FF;
+}
+
+.news-toggle-icon {
+    color: #0055FF;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.news-item.open .news-toggle-icon {
+    transform: rotate(180deg);
+}
+
+.news-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.news-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, margin-top 0.3s ease;
+    opacity: 0;
+}
+
+.news-item.open .news-content {
+    max-height: 200px; /* 十分な高さ */
+    margin-top: 16px;
+    opacity: 1;
+}
+
+.news-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 600px) {
+    .news-item {
+        padding: 20px;
+    }
+    
+    .news-meta {
+        gap: 12px;
+    }
+    
+    .news-title {
+        font-size: 15px;
+    }
+}

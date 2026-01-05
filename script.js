@@ -256,4 +256,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- News Accordion Logic ---
+    const newsItems = document.querySelectorAll('.news-item');
+
+    newsItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Toggle current item
+            const isOpen = item.classList.contains('open');
+
+            // Optional: Close others? For now, let's allow multiple open or just toggle
+            // User request image shows multiple can be listed, maybe not expanded.
+            // Let's implement standard toggle behavior.
+
+            if (isOpen) {
+                item.classList.remove('open');
+            } else {
+                item.classList.add('open');
+            }
+        });
+    });
+
 });
