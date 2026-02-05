@@ -330,6 +330,46 @@ body {
     background: black;
 }
 
+/* 隣の高専生ロゴ */
+.tonari-link {
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.tonari-link:hover {
+    opacity: 0.8;
+}
+
+.tonari-logo {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+
+/* ヒーローセクションのコンタクトボタン（正方形・オレンジ） */
+.hero-actions .button-primary {
+    width: 140px;
+    height: 140px;
+    border-radius: 0;
+    background: white;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.hero-actions .button-primary:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-4px);
+}
+
 /* ヒーロービジュアル（右側） */
 .hero-visual {
     flex: 1;

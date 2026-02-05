@@ -4,7 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nakamoto Ryosuke</title>
+    <title>中本怜祐 | Nakamoto Ryosuke - 高専生エンジニア・起業家ポートフォリオ</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="中本怜祐（なかもとりょうすけ）のポートフォリオサイト。香川高専電子システム工学科1年。まちごとアシスト代表、隣の高専生プロジェクト主宰。プログラミング教育・地域課題解決に取り組む15歳の高専生エンジニア。">
+    <meta name="keywords"
+        content="中本怜祐, なかもとりょうすけ, Nakamoto Ryosuke, 高専生, 香川高専, 隣の高専生, まちごとアシスト, プログラミング, エンジニア, 起業家, ポートフォリオ">
+    <meta name="author" content="中本怜祐">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ryosuke-nakamoto.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ryosuke-nakamoto.com/">
+    <meta property="og:title" content="中本怜祐 | Nakamoto Ryosuke - 高専生エンジニア・起業家">
+    <meta property="og:description" content="香川高専電子システム工学科1年。まちごとアシスト代表、隣の高専生。プログラミング教育・地域課題解決に取り組む15歳の高専生エンジニア。">
+    <meta property="og:image" content="assets/img/hero_profile.jpg">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ryosuke-nakamoto.com/">
+    <meta name="twitter:title" content="中本怜祐 | Nakamoto Ryosuke - 高専生エンジニア・起業家">
+    <meta name="twitter:description" content="香川高専電子システム工学科1年。まちごとアシスト代表、隣の高専生プロジェクト主宰。15歳の高専生エンジニア。">
+    <meta name="twitter:image" content="assets/img/hero_profile.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "中本怜祐",
+        "alternateName": ["Nakamoto Ryosuke", "なかもとりょうすけ"],
+        "description": "香川高専電子システム工学科1年。まちごとアシスト代表、隣の高専生プロジェクト主宰。プログラミング教育・地域課題解決に取り組む15歳の高専生エンジニア。",
+        "url": "https://ryosuke-nakamoto.com/",
+        "image": "assets/img/hero_profile.jpg",
+        "sameAs": [
+            "https://twitter.com/R14dwBBIhB96398",
+            "https://instagram.com/ryor_i28",
+            "https://github.com/ryorig"
+        ],
+        "jobTitle": "Student / Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "まちごとアシスト"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "香川高等専門学校詫間キャンパス"
+        },
+        "knowsAbout": ["プログラミング", "アプリ開発", "起業", "教育", "地域課題解決"]
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,8 +176,8 @@
                                 <div class="year">現在</div>
                                 <div class="desc">
                                     香川県でプログラミング教室を運営<br>
-                                    "隣の高専生"プロジェクト<br>
-                                    DCON二次挑戦中<br>
+                                    <a href="https://tonari.ac" target="_blank" class="tonari-link"><img
+                                            src="assets/img/tonari_logo.png" alt="隣の高専生" class="tonari-logo"></a><br>
 
                                 </div>
                             </div>
@@ -152,7 +205,7 @@
                                 <div class="year">2023</div>
                                 <div class="desc">
                                     空手で全国出場<br>
-                                    子供たちのためのワークショップを開催する
+                                    起業家体験プログラム「飛行船」参加
                                 </div>
                             </div>
                             <div class="history-item">
@@ -175,91 +228,74 @@
                 <h2 class="section-title">Works</h2>
                 <div class="grid-layout">
 
-                    <!-- Workアイテム 9: Mirai no Pitch -->
-                    <div class="card work-card">
-                        <div class="work-image">
-                            <img src="https://www.nict.go.jp/venture/ujfr3m000000042d-img/02.jpg" alt="Mirai no Pitch">
-                            <img src="https://minecraftokayama.wordpress.com/wp-content/uploads/2025/12/image-1.png" alt="ミライノピッチ2025学生受賞者一覧">
-                            <img src="assets/img/works/未来のピッチNICT賞.jpg" alt="Mirai no Pitch">
-                            <img src="assets/img/works/未来のピッチアグベンチャーラボ.jpg" alt="Mirai no Pitch Award"
-                                class="hidden-thumb">
-                            <img src="assets/img/works/未来のピッチパソナグループ.jpg" alt="Mirai no Pitch Pasona"
-                                class="hidden-thumb">
-                            <img src="assets/img/works/未来のピッチ集合写真.jpg" alt="Mirai no Pitch Group" class="hidden-thumb">
-                        </div>
-                        <div class="work-info">
-                            <h3>ミライノピッチ</h3>
-                            <p>ミライノピッチ3部門 NICT賞 パソナグループ賞 Ag Venture Lab賞</p>
-                            <div class="tags">
-                                <span class="tag">Contest</span>
-                                <span class="tag">Award</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Workアイテム 6: Nanchare -->
-                    <div class="card work-card">
-                        <div class="work-image">
-                            <img src="assets/img/works/なんちゃれ受賞.jpg" alt="Nanchare Award">
-                            <img src="assets/img/works/なんちゃれポスター.jpg" alt="Nanchare Poster" class="hidden-thumb">
-                        </div>
-                        <div class="work-info">
-                            <h3>なんチャレ2025</h3>
-                            <p>なんチャレ2025最優秀賞受賞</p>
-                            <div class="tags">
-                                <span class="tag">Contest</span>
-                                <span class="tag">Award</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card work-card">
-                        <div class="work-image">
-                            <img src="https://mitouteki.jp/r6/_app/wp-content/themes/akatsukipjt/img/home/main_copy.png" alt="未踏AKATSUKI">
-                        </div>
-                        <div class="work-info">
-                            <h3>Akatsuki未踏</h3>
-                            <p>Akatsukiプロジェクト採択</p>
-                            <div class="tags">
-                                <span class="tag">Contest</span>
-                                <span class="tag">Award</span>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <!-- Workアイテム 1: Rakuben -->
                     <div class="card work-card">
                         <div class="work-image">
-                            <img src="assets/img/works/rakuben.jpg" alt="Rakuben">
-                            <img src="assets/img/works/らくべんアプリ写真.jpg" alt="Rakuben App" class="hidden-thumb">
-                            <img src="assets/img/works/らくべんロゴ.jpg" alt="Rakuben Logo" class="hidden-thumb">
+                            <img src="assets/img/works/tonari_kosen.png" alt="隣の高専生">
                         </div>
                         <div class="work-info">
-                            <h3>らくべん</h3>
-                            <p>中学二年生の時に過去問を共有するアプリを作成。</p>
+                            <h3>隣の高専生</h3>
+                            <p><a href="https://tonari.ac" target="_blank">https://tonari.ac</a></p>
                             <div class="tags">
-                                <span class="tag">App</span>
-                                <span class="tag">Education</span>
+                                <span class="tag">Project</span>
+                                <span class="tag">Startup</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Workアイテム 2: Programming -->
+                    <!-- 現在: 三豊AIプログラミング教室 -->
                     <div class="card work-card">
                         <div class="work-image">
-                            <img src="assets/img/works/programming.jpg" alt="Programming">
+                            <img src="assets/img/works/三豊AIプログラミング教室マインクラフト写真.jpg" alt="Mitoyo AI Programming">
                         </div>
                         <div class="work-info">
-                            <h3>プログラミング講座</h3>
-                            <p>岡山・香川で小中学生向けのプログラミング講座を実施。</p>
+                            <h3>三豊AIプログラミング教室</h3>
+                            <p>香川県で行っているAIプログラミング教室。</p>
                             <div class="tags">
                                 <span class="tag">Education</span>
-                                <span class="tag">Event</span>
+                                <span class="tag">AI</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Workアイテム 3: PrepMate -->
+                    <!-- 2025: なんちゃれ2025 -->
+                    <div class="card work-card">
+                        <div class="work-image">
+                            <img src="assets/img/works/なんちゃれ受賞.jpg" alt="Nanchare Award">
+                            <img src="assets/img/works/なんちゃれポスター.jpg" alt="Nanchare Poster" class="hidden-thumb">
+                        </div>
+                        <div class="work-info">
+                            <h3>なんちゃれ2025</h3>
+                            <p>なんちゃれコンテストで最優秀賞受賞。</p>
+                            <div class="tags">
+                                <span class="tag">Contest</span>
+                                <span class="tag">Award</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025: ミライノピッチ -->
+                    <div class="card work-card">
+                        <div class="work-image">
+                            <img src="assets/img/works/miraino_pitch_nict.jpg" alt="Mirai no Pitch">
+                            <img src="assets/img/works/未来のピッチNICT賞.jpg" alt="Mirai no Pitch NICT" class="hidden-thumb">
+                            <img src="assets/img/works/未来のピッチアグベンチャーラボ.jpg" alt="Mirai no Pitch Award"
+                                class="hidden-thumb">
+                            <img src="assets/img/works/未来のピッチパソナグループ.jpg" alt="Mirai no Pitch Pasona"
+                                class="hidden-thumb">
+                            <img src="assets/img/works/未来のピッチ集合写真.jpg" alt="Mirai no Pitch Group" class="hidden-thumb">
+                        </div>
+                        <div class="work-info">
+                            <h3>ミライノピッチ2025</h3>
+                            <p>NICT賞、AgventureLab賞、パソナグループ賞受賞。</p>
+                            <div class="tags">
+                                <span class="tag">Contest</span>
+                                <span class="tag">Award</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025: PrepMate -->
                     <div class="card work-card">
                         <div class="work-image">
                             <img src="assets/img/works/prepmate.jpg" alt="PrepMate">
@@ -278,10 +314,11 @@
                         </div>
                     </div>
 
-                    <!-- Workアイテム 4: RemoNA -->
+                    <!-- 2025: RemoNA -->
                     <div class="card work-card">
                         <div class="work-image">
-                            <img src="assets/img/works/remona.jpg" alt="RemoNA">
+                            <img src="assets/img/works/akatsuki_project.jpg" alt="RemoNA">
+                            <img src="assets/img/works/remona.jpg" alt="RemoNA" class="hidden-thumb">
                             <img src="assets/img/works/akatsuki合宿RemoNA資料.jpg" alt="RemoNA Slide" class="hidden-thumb">
                             <img src="assets/img/works/akatsuki合宿発表注射針.jpg" alt="RemoNA Presentation"
                                 class="hidden-thumb">
@@ -295,23 +332,70 @@
                         </div>
                     </div>
 
-                    <!-- Workアイテム 5: Mitoyo AI Programming Class -->
+                    <!-- 2025: Devcamp -->
                     <div class="card work-card">
                         <div class="work-image">
-                            <img src="assets/img/works/三豊AIプログラミング教室マインクラフト写真.jpg" alt="Mitoyo AI Programming">
+                            <img src="assets/img/works/Devcamp集合写真.jpg" alt="Devcamp">
                         </div>
                         <div class="work-info">
-                            <h3>三豊AIプログラミング教室</h3>
-                            <p>香川県で行っているAIプログラミング教室。</p>
+                            <h3>Devcamp</h3>
+                            <p>開発合宿に参加。「隣の高専生」を開発。</p>
                             <div class="tags">
-                                <span class="tag">Education</span>
-                                <span class="tag">AI</span>
+                                <span class="tag">Camp</span>
+                                <span class="tag">Event</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Workアイテム 6: Entrepreneurship Program -->
-                    <div class="card work-card">
+                    <!-- 2025: 高専キャリア (hidden) -->
+                    <div class="card work-card hidden">
+                        <div class="work-image">
+                            <img src="assets/img/works/高専キャリア夏の全国大会写真.jpg" alt="Kosen Career">
+                        </div>
+                        <div class="work-info">
+                            <h3>高専キャリア</h3>
+                            <p>高専キャリア夏の全国大会参加。</p>
+                            <div class="tags">
+                                <span class="tag">Event</span>
+                                <span class="tag">Career</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024: プログラミング講座 (hidden) -->
+                    <div class="card work-card hidden">
+                        <div class="work-image">
+                            <img src="assets/img/works/programming.jpg" alt="Programming">
+                        </div>
+                        <div class="work-info">
+                            <h3>プログラミング講座</h3>
+                            <p>岡山・香川で小中学生向けのプログラミング講座を実施。</p>
+                            <div class="tags">
+                                <span class="tag">Education</span>
+                                <span class="tag">Event</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024: らくべん (hidden) -->
+                    <div class="card work-card hidden">
+                        <div class="work-image">
+                            <img src="assets/img/works/rakuben.jpg" alt="Rakuben">
+                            <img src="assets/img/works/らくべんアプリ写真.jpg" alt="Rakuben App" class="hidden-thumb">
+                            <img src="assets/img/works/らくべんロゴ.jpg" alt="Rakuben Logo" class="hidden-thumb">
+                        </div>
+                        <div class="work-info">
+                            <h3>らくべん</h3>
+                            <p>中学二年生の時に過去問を共有するアプリを作成。</p>
+                            <div class="tags">
+                                <span class="tag">App</span>
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 起業体験プログラム (hidden) -->
+                    <div class="card work-card hidden">
                         <div class="work-image">
                             <img src="assets/img/works/起業体験プログラムチラシの画像.png" alt="Entrepreneurship Program Flyer">
                             <img src="assets/img/works/起業体験プログラムワークショップチラシ.jpg" alt="Entrepreneurship Program Workshop"
@@ -327,7 +411,7 @@
                         </div>
                     </div>
 
-                    <!-- Workアイテム 7: Oita Kosen Visit -->
+                    <!-- 大分高専訪問 (hidden) -->
                     <div class="card work-card hidden">
                         <div class="work-image">
                             <img src="assets/img/works/大分高専写真.jpg" alt="Oita Kosen Visit">
@@ -342,7 +426,7 @@
                         </div>
                     </div>
 
-                    <!-- Workアイテム 8: DMG Mori Visit -->
+                    <!-- DMG森精機見学 (hidden) -->
                     <div class="card work-card hidden">
                         <div class="work-image">
                             <img src="assets/img/works/DMGMORI写真.jpg" alt="DMG Mori Visit">
@@ -358,9 +442,8 @@
                     </div>
 
                     <!-- Workアイテム 9: Mirai no Pitch -->
-                    <div class="card work-card">
+                    <div class="card work-card hidden">
                         <div class="work-image">
-                            <img src="https://www.nict.go.jp/venture/ujfr3m000000042d-img/02.jpg" alt="Mirai no Pitch">
                             <img src="assets/img/works/未来のピッチNICT賞.jpg" alt="Mirai no Pitch">
                             <img src="assets/img/works/未来のピッチアグベンチャーラボ.jpg" alt="Mirai no Pitch Award"
                                 class="hidden-thumb">
@@ -379,7 +462,7 @@
                     </div>
 
                     <!-- Workアイテム 6: Nanchare -->
-                    <div class="card work-card">
+                    <div class="card work-card hidden">
                         <div class="work-image">
                             <img src="assets/img/works/なんちゃれ受賞.jpg" alt="Nanchare Award">
                             <img src="assets/img/works/なんちゃれポスター.jpg" alt="Nanchare Poster" class="hidden-thumb">
